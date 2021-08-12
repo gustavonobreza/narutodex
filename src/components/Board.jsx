@@ -38,10 +38,7 @@ function Board() {
             alignItems: "center",
           }}
         >
-          <img
-            style={{ height: "70vh", maxWidth: "100vw" }}
-            src={"./Loading_icon.gif"}
-          />
+          <img style={{ maxWidth: "100vw" }} src={"./Loading_icon.gif"} />
         </div>
       </>
     );
