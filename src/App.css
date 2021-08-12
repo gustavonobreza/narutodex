@@ -5,15 +5,15 @@
 @media (max-width: 800px) {
   .card-container {
     flex-wrap: nowrap;
-    min-width: 96vw;
+    min-width: 97.5vw;
   }
   .card {
-    min-width: 96vw;
+    min-width: 97.5vw;
     border: 3px solid hsla(0, 0%, 45.9%, 0.74);
     margin: 3px;
   }
   .square {
-    min-width: 96vw;
+    min-width: 97.5vw;
   }
   .name {
     font-size: 18px;
