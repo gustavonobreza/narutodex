@@ -19,6 +19,12 @@ function Square({ name, id, images, info, about, page }) {
           {name}
         </a>
       </p>
+      <img
+        src={images[images.length - 1]}
+        alt={name}
+        width={500}
+        style={{ margin: "10px 0 0 0", textAlign: "center", width: "100%" }}
+      />
 
       <div className="about">
         {about.map((paragraph) => {
@@ -29,13 +35,6 @@ function Square({ name, id, images, info, about, page }) {
           );
         })}
       </div>
-
-      <img
-        src={images[images.length - 1]}
-        alt={name}
-        width={500}
-        style={{ margin: "10px 0 0 0", textAlign: "center", width: "100%" }}
-      />
     </div>
   );
 }
