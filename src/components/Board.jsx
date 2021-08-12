@@ -8,7 +8,7 @@ function Board() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch("https://naruto-api.herokuapp.com/")
+    fetch("https://naruto-api.herokuapp.com/api/v1/characters?sort=true")
       .then((res) => res.json())
       .then(
         (result) => {
