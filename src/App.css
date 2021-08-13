@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .card-container {
     flex-wrap: nowrap;
     min-width: 97.5vw;
