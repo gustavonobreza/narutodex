@@ -1,8 +1,11 @@
 import { nanoid } from "nanoid";
+import { useState } from "react";
 
 function Square({ name, id, images, info, about, page }) {
   // let isVisible = true;
   // console.log({ page });
+  const [imgIndex, setImgIndex] = useState(images.length - 1);
+
   return (
     <div
       key={id}
@@ -26,10 +29,23 @@ function Square({ name, id, images, info, about, page }) {
         </a>
       </p>
       <img
-        src={images[images.length - 1]}
+        src={images[imgIndex]}
         alt={name}
         width={500}
-        style={{ margin: "10px 0 0 0", textAlign: "center", width: "100%" }}
+        onClick={
+          (e) => {
+            setImgIndex((curr) =>
+              curr - 1 >= 0 ? curr - 1 : images.length - 1
+            );
+          }
+          // (e.currentTarget.src = images[images.length - 2 || images.length - 1])
+        }
+        style={{
+          margin: "10px 0 0 0",
+          textAlign: "center",
+          width: "100%",
+          cursor: "pointer",
+        }}
       />
 
       <div className="about">

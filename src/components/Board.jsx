@@ -50,24 +50,24 @@ function Board() {
         style={{
           display: "flex",
           flexWrap: "wrap",
-          // justifyContent: "center",
-          // alignItems: "center",
           width: "100%",
           maxWidth: "100%",
         }}
       >
-        {items.map(({ name, id, images, info, about, page }) => (
-          <Square
-            className="square"
-            name={name}
-            id={id}
-            images={images}
-            info={info}
-            about={about}
-            key={nanoid()}
-            page={page}
-          />
-        ))}
+        {items.map(({ name, id, images, info, about, page }) => {
+          return (
+            <Square
+              className="square"
+              name={name}
+              id={id}
+              images={images}
+              info={info}
+              about={about}
+              key={nanoid()}
+              page={page}
+            />
+          );
+        })}
       </div>
     );
   }
