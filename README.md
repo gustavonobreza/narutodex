@@ -2,6 +2,11 @@
 
 Like a Pokédex but for Naruto. It use [Naruto API](https://github.com/Gustavonobreza/naruto-api) to fetch data about Naruto (and Boruto) anime and manga.
 
+# Demo
+
+<img src="./docs/screenshot.png" alt="narutodex" />
+<img src="./docs/screenshot2.png" alt="narutodex" />
+
 ## Installation
 
 ```bash
