@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+=======
+>>>>>>> ae3ecf80919b7601deac358c030ad9a5ba7fdaa1
 # dependencies
 /node_modules
 /.pnp
@@ -8,16 +11,39 @@
 # testing
 /coverage
 
+<<<<<<< HEAD
+=======
+# next.js
+/.next/
+/out/
+
+>>>>>>> ae3ecf80919b7601deac358c030ad9a5ba7fdaa1
 # production
 /build
 
 # misc
 .DS_Store
+<<<<<<< HEAD
+=======
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+>>>>>>> ae3ecf80919b7601deac358c030ad9a5ba7fdaa1
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+<<<<<<< HEAD
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+=======
+# vercel
+.vercel
+>>>>>>> ae3ecf80919b7601deac358c030ad9a5ba7fdaa1

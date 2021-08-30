@@ -24,7 +24,16 @@ function Square({ name, id, images, info, about, page }) {
       }}
     >
       <p className={"name"} style={{ fontFamily: "Arial" }}>
+<<<<<<< HEAD
         <a href={page} target="_blank" style={{ color: "#4287f5" }}>
+=======
+        <a
+          href={page}
+          target="_blank"
+          style={{ color: "#4287f5" }}
+          rel="noreferrer"
+        >
+>>>>>>> ae3ecf80919b7601deac358c030ad9a5ba7fdaa1
           {name}
         </a>
       </p>
@@ -33,7 +42,11 @@ function Square({ name, id, images, info, about, page }) {
         alt={name}
         width={500}
         onClick={
+<<<<<<< HEAD
           (e) => {
+=======
+          (_e) => {
+>>>>>>> ae3ecf80919b7601deac358c030ad9a5ba7fdaa1
             setImgIndex((curr) =>
               curr - 1 >= 0 ? curr - 1 : images.length - 1
             );
@@ -48,7 +61,20 @@ function Square({ name, id, images, info, about, page }) {
         }}
       />
 
+<<<<<<< HEAD
       <div className="about">
+=======
+      <div
+        className="about"
+        // style={{
+        //   display: "block",
+        //   maxHeight: "400px",
+        //   overflow: "hidden",
+        //   // whiteSpace: 'nowrap',
+        //   textOverflow: "ellipsis",
+        // }}
+      >
+>>>>>>> ae3ecf80919b7601deac358c030ad9a5ba7fdaa1
         {about.map((paragraph, ind, all) => {
           const part = all.slice(0, ind).join(" ");
           if (part.length < 1600) {

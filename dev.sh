@@ -1,0 +1,1 @@
+rimraf .next/ && pnpm dev
