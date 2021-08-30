@@ -24,7 +24,7 @@ function Square({ name, id, images, info, about, page }) {
       }}
     >
       <p className={"name"} style={{ fontFamily: "Arial" }}>
-        <a href={page} target="_blank" style={{ color: "#4287f5" }}>
+        <a href={page} target="_blank" rel="noreferrer" style={{ color: "#4287f5" }}>
           {name}
         </a>
       </p>
